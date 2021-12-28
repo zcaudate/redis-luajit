@@ -1,0 +1,3 @@
+[submodule "deps/LuaJIT"]
+	path = deps/LuaJIT
+	url = git@github.com:zcaudate/LuaJIT.git
