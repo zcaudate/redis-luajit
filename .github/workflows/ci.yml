@@ -32,11 +32,13 @@ jobs:
 
   build-macos-latest:
     runs-on: macos-latest
+    env:
+      MACOSX_DEPLOYMENT_TARGET: 10.16
     steps:
     - uses: actions/checkout@v2
       with: 
         submodules: true
-    - name: make MACOSX_DEPLOYMENT_TARGET=10.16
+    - name: make
       run: make REDIS_CFLAGS='-Werror'
 
   build-32bit:
