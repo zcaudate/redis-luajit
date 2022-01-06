@@ -1069,6 +1069,7 @@ void luaLoadLibraries(lua_State *lua) {
 #if 1 /* Stuff that we don't load currently, for sandboxing concerns. */
     luaLoadLib(lua, LUA_LOADLIBNAME, luaopen_package);
     luaLoadLib(lua, LUA_OSLIBNAME, luaopen_os);
+    luaLoadLib(lua, LUA_IOLIBNAME, luaopen_io);
 #endif
 }
 

@@ -1,3 +1,6 @@
 [submodule "deps/LuaJIT"]
 	path = deps/LuaJIT
 	url = git@github.com:zcaudate/LuaJIT.git
+[submodule "deps/luasocket"]
+	path = deps/luasocket
+	url = https://github.com/diegonehab/luasocket.git
